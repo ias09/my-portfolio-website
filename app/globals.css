@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3f5f6;
+  --paper-raised: #ffffff;
+  --ink: #14181f;
+  --ink-soft: #4a5361;
+  --ink-faint: #838d9c;
+  --line: #dde2e7;
+  --indigo: #33429e;
+  --indigo-deep: #232f78;
+  --gold: #b8873b;
+  --gold-soft: #efe2c9;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-line: var(--line);
+  --color-indigo: var(--indigo);
+  --color-indigo-deep: var(--indigo-deep);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--gold-soft);
+  color: var(--ink);
+}
+
+.container-page {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.prose-measure {
+  max-width: 42rem;
+}
+
+.data-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+}
+
+.section-heading {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+html {
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
